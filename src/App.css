@@ -1,27 +1,64 @@
 /* Customize your main colors in :root variables */
 :root {
-  --main-background-color: #343A50;
-  --card-background-color: #804980;
-  --countdown-background-color: #433765;
-  --main-text-color:#F7F6F4;
-  --title-text-color:#3CBA8B;
+  --main-background-color: #000;
+  --card-background-color: rgba(38, 38, 38, 0.7);
+  --countdown-background-color: #404040;
+  --main-text-color: #f7f6f4;
+  --title-text-color: #3cba8b;
 }
 
-body{
-/*  background-color:var(--main-background-color);*/
-  background: url("img/background.png");
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Bold"), local("Gilroy-Bold"),
+    url(./fonts/Gilroy-Bold.woff2) format("woff2"),
+    url(./fonts/Gilroy-Bold.woff) format("woff"),
+    url(./fonts/Gilroy-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Regular"), local("Gilroy-Regular"),
+    url(./fonts/Gilroy-Regular.woff2) format("woff2"),
+    url(./fonts/Gilroy-Regular.woff) format("woff"),
+    url(./fonts/Gilroy-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url(./fonts/Montserrat-Bold.woff2) format("woff2"),
+    url(./fonts/Montserrat-Bold.woff) format("woff"),
+    url(./fonts/Montserrat-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+html,
+body {
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--main-background-color);
+  background: url("img/main-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  font-family: 'Patrick Hand', cursive;
+  font-family: "Gilroy" !important;
   font-size: 1.1em;
+  height: 100vh;
 }
 
-h2, p{
+h2,
+p {
   color: var(--main-text-color);
 }
-
-h3{
-font-weight: normal;
+h2 {
+  text-transform: uppercase;
+  margin: 20px 0 25px;
+  font-size: 30px;
 }
 
-
-
+h3 {
+  font-weight: normal;
+}
