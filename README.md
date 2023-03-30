@@ -1,6 +1,9 @@
 # Страница для "минта" NFT
 
+### Ссылка на GitHub Pages: https://golden-foxes-fdpstcult-m-morgunets.vercel.app/
+
 ### Ссылка на репозиторий, который взят в качестве шаблона: https://github.com/Fulgurus/candy-machine-v2-responsive-ui
+
 
 ## Функционал приложения:
 
